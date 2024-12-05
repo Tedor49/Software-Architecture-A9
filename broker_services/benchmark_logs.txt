@@ -1,0 +1,156 @@
+[+] Building 0.0s (0/0)  docker:desktop-linux
+2024/12/05 23:06:51 http2: server: error reading preface from client //./pipe/dockerDesktopLinuxEngine: file has already been closed
+2024/12/05 23:06:51 http2: server: error reading preface from client //./pipe/dockerDesktopLinuxEngine: file has already been closed
+[+] Building 1.7s (34/34) FINISHED                                                                                                  docker:desktop-linux
+ => [publish internal] load build definition from Dockerfile                                                                                        0.0s
+ => => transferring dockerfile: 171B                                                                                                                0.0s
+ => [filter internal] load build definition from Dockerfile                                                                                         0.0s
+ => => transferring dockerfile: 169B                                                                                                                0.0s
+ => [api internal] load build definition from Dockerfile                                                                                            0.0s
+ => => transferring dockerfile: 178B                                                                                                                0.0s
+ => [scream internal] load build definition from Dockerfile                                                                                         0.0s
+ => => transferring dockerfile: 169B                                                                                                                0.0s
+ => [filter internal] load metadata for docker.io/library/python:3.7                                                                                1.2s
+ => [publish internal] load .dockerignore                                                                                                           0.0s
+ => => transferring context: 2B                                                                                                                     0.0s
+ => [api internal] load .dockerignore                                                                                                               0.0s
+ => => transferring context: 2B                                                                                                                     0.0s
+ => [scream internal] load .dockerignore                                                                                                            0.0s
+ => => transferring context: 2B                                                                                                                     0.0s
+ => [filter internal] load .dockerignore                                                                                                            0.0s
+ => => transferring context: 2B                                                                                                                     0.0s
+ => [scream 1/4] FROM docker.io/library/python:3.7@sha256:eedf63967cdb57d8214db38ce21f105003ed4e4d0358f02bedc057341bcf92a0                          0.0s
+ => => resolve docker.io/library/python:3.7@sha256:eedf63967cdb57d8214db38ce21f105003ed4e4d0358f02bedc057341bcf92a0                                 0.0s
+ => [scream internal] load build context                                                                                                            0.0s
+ => => transferring context: 66B                                                                                                                    0.0s
+ => [filter internal] load build context                                                                                                            0.0s
+ => => transferring context: 66B                                                                                                                    0.0s
+ => [api internal] load build context                                                                                                               0.0s
+ => => transferring context: 63B                                                                                                                    0.0s
+ => [publish internal] load build context                                                                                                           0.0s
+ => => transferring context: 2.34kB                                                                                                                 0.0s
+ => CACHED [scream 2/4] COPY requirements.txt /                                                                                                     0.0s
+ => CACHED [scream 3/4] RUN pip install -r requirements.txt                                                                                         0.0s
+ => CACHED [scream 4/4] COPY scream.py /                                                                                                            0.0s
+ => CACHED [publish 3/4] RUN pip install -r requirements.txt                                                                                        0.0s
+ => CACHED [api 2/4] COPY requirements.txt /                                                                                                        0.0s
+ => CACHED [api 3/4] RUN pip install -r requirements.txt                                                                                            0.0s
+ => CACHED [api 4/4] COPY api.py /                                                                                                                  0.0s
+ => CACHED [filter 2/4] COPY requirements.txt /                                                                                                     0.0s
+ => CACHED [filter 3/4] RUN pip install -r requirements.txt                                                                                         0.0s
+ => CACHED [filter 4/4] COPY filter.py /                                                                                                            0.0s
+ => CACHED [publish 2/4] COPY requirements.txt /                                                                                                    0.0s
+ => [publish 4/4] COPY publish.py /                                                                                                                 0.0s
+ => [filter] exporting to image                                                                                                                     0.2s
+ => => exporting layers                                                                                                                             0.0s
+ => => exporting manifest sha256:86d702410d6579ae65812cf559d2fd526a68650a7916d335ac0a14bbd03efec7                                                   0.0s
+ => => exporting config sha256:f6f302e16b9bef0e2baaa1cc8ce21a5b2556cf842b5aef28352ba9e05ccce744                                                     0.0s
+ => => exporting attestation manifest sha256:42f033c5a7fd8d0f7275041ddfc078529782cfac8f0df4b108911059ba33889f                                       0.1s
+ => => exporting manifest list sha256:fade5e6fe5363cdbdce72be1589dcc9feb3cbb71af669b7881d2e82a3b2ab2c0                                              0.0s
+ => => naming to docker.io/library/broker_services-filter:latest                                                                                    0.0s
+ => => unpacking to docker.io/library/broker_services-filter:latest                                                                                 0.0s
+ => [api] exporting to image                                                                                                                        0.1s
+ => => exporting layers                                                                                                                             0.0s
+ => => exporting manifest sha256:5d633627a2cb48ed937c91adc2b551473035914bfb92f637b0b60eb151f29271                                                   0.0s
+ => => exporting config sha256:47627660f606b7784639e85383f6eccb5838164b225df4c3f0b2bbafcf41e1a5                                                     0.0s
+ => => exporting attestation manifest sha256:e12a288260dd55019766655455e48964748a039e2789d070ac9d9bf8104b91ce                                       0.1s
+ => => exporting manifest list sha256:215fbd7dd249400a5a2dc65139433abe8aa69407d2501bbeb87b7ee0fcfa4c95                                              0.0s
+ => => naming to docker.io/library/broker_services-api:latest                                                                                       0.0s
+ => => unpacking to docker.io/library/broker_services-api:latest                                                                                    0.0s
+ => [scream] exporting to image                                                                                                                     0.1s
+ => => exporting layers                                                                                                                             0.0s
+ => => exporting manifest sha256:2e0192bb86b3dbc6c0872ff568d54510f240ad1e4a92a2418cbbb3d8fa0281fe                                                   0.0s
+ => => exporting config sha256:2c8e76107663a5c76272fd9ed13410914394ebf8ee0be6c59bf87e5bd219f4f9                                                     0.0s
+ => => exporting attestation manifest sha256:b5b46c50eee387b903cc8a57afe309586aa659e0d2c6146bba039f4771580460                                       0.1s
+ => => exporting manifest list sha256:86d2d6edd6aa2aad7a9c5b43ac89b107f95782edb4e210938850f6a2e656ebfd                                              0.0s
+ => => naming to docker.io/library/broker_services-scream:latest                                                                                    0.0s
+ => => unpacking to docker.io/library/broker_services-scream:latest                                                                                 0.0s
+ => [publish] exporting to image                                                                                                                    0.3s
+ => => exporting layers                                                                                                                             0.1s
+ => => exporting manifest sha256:84ee1a731b3bd09236f1e1f980674b6a14e4154419919f339cc6c1f69f782450                                                   0.0s
+ => => exporting config sha256:7b2a7cfbeebd361eb124fc1d1ae66335242169e7811eb671c5c8a49e9340d67e                                                     0.0s
+ => => exporting attestation manifest sha256:1020cf2fc6e55b1f64c9b515a78a961149bd2be1e5dce5034a291fde696de4e8                                       0.0s
+ => => exporting manifest list sha256:af63d89bb604132c7a4aed1856945c29de32ed9b954f35d73ac71864fc4bb2a9                                              0.0s
+ => => naming to docker.io/library/broker_services-publish:latest                                                                                   0.0s
+ => => unpacking to docker.io/library/broker_services-publish:latest                                                                                0.0s
+ => [api] resolving provenance for metadata file                                                                                                    0.1s
+ => [scream] resolving provenance for metadata file                                                                                                 0.0s
+ => [filter] resolving provenance for metadata file                                                                                                 0.0s
+ => [publish] resolving provenance for metadata file                                                                                                0.0s
+Trying to connect to api...
+Trying to connect to api...
+Trying to connect to api...
+Trying to connect to api...
+Trying to connect to api...
+Trying to connect to api...
+Connected!
+Pushing message 0
+b'{"success":true}'
+Pushing message 10
+b'{"success":true}'
+Pushing message 20
+b'{"success":true}'
+Pushing message 30
+b'{"success":true}'
+Pushing message 40
+b'{"success":true}'
+FINISHED PUSHING ALL MESSAGES, WAITING FOR THE BROKER TO FINISH
+0 %
+2.0 %
+4.0 %
+6.0 %
+8.0 %
+10.0 %
+12.0 %
+14.000000000000002 %
+16.0 %
+18.0 %
+20.0 %
+22.0 %
+24.0 %
+26.0 %
+28.000000000000004 %
+30.0 %
+32.0 %
+34.0 %
+36.0 %
+38.0 %
+40.0 %
+42.0 %
+44.0 %
+46.0 %
+48.0 %
+50.0 %
+52.0 %
+54.0 %
+56.00000000000001 %
+57.99999999999999 %
+60.0 %
+62.0 %
+64.0 %
+66.0 %
+68.0 %
+70.0 %
+72.0 %
+74.0 %
+76.0 %
+78.0 %
+80.0 %
+82.0 %
+84.0 %
+86.0 %
+88.0 %
+90.0 %
+92.0 %
+94.0 %
+96.0 %
+98.0 %
+100.0 %
+[+] Running 6/6
+ ✔ Container broker_services-api-1       Removed                                                                                                    1.0s
+ ✔ Container broker_services-filter-1    Removed                                                                                                    1.3s
+ ✔ Container broker_services-publish-1   Removed                                                                                                    0.8s
+ ✔ Container broker_services-scream-1    Removed                                                                                                    0.7s
+ ✔ Container broker_services-rabbitmq-1  Removed                                                                                                    1.5s
+ ✔ Network broker_services_default       Removed                                                                                                    0.3s
+Average time using services: 8.092881157439999s

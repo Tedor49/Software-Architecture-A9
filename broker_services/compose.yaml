@@ -1,0 +1,16 @@
+services:
+  rabbitmq:
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    image: "rabbitmq:4.0-management"
+  api:
+    build: ./api
+    ports:
+      - "8000:8000"
+  filter:
+    build: ./filter
+  scream:
+    build: ./scream
+  publish:
+    build: ./publish

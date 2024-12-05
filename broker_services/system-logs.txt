@@ -1,0 +1,22 @@
+ Network broker_services_default  Creating
+ Network broker_services_default  Created
+ Container broker_services-publish-1  Creating
+ Container broker_services-api-1  Creating
+ Container broker_services-scream-1  Creating
+ Container broker_services-rabbitmq-1  Creating
+ Container broker_services-filter-1  Creating
+ Container broker_services-rabbitmq-1  Created
+ Container broker_services-api-1  Created
+ Container broker_services-scream-1  Created
+ Container broker_services-publish-1  Created
+ Container broker_services-filter-1  Created
+Attaching to api-1, filter-1, publish-1, rabbitmq-1, scream-1
+publish-1   | I EXIST!
+scream-1    | I EXIST!
+filter-1    | I EXIST!
+Gracefully stopping... (press Ctrl+C again to force)
+ Container broker_services-publish-1  Stopping
+ Container broker_services-rabbitmq-1  Stopping
+ Container broker_services-scream-1  Stopping
+ Container broker_services-api-1  Stopping
+ Container broker_services-filter-1  Stopping
